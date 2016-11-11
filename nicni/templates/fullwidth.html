@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block content %}
+    {% placeholder content or %}
+        <p>Esta página aún no tiene contenido. Asegúrate de estar en modo de<em>Edición</em>
+					(Pulse el botón <strong> Editar página </strong> si es necesario). Luego, cambie a
+					 <Em> Estructura </ em>.</p>
+    {% endplaceholder %}
+{% endblock content %}
